@@ -1,0 +1,124 @@
+
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --accent: #2b6cb0;
+  --muted: #6b7280;
+  --radius: 12px;
+  --maxw: 900px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg), #ffffff 60%);
+  color:#0f1724;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+  padding:32px 16px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+*/
+main, .container{
+  width:100%;
+  max-width:var(--maxw);
+  background:var(--card);
+  padding:28px;
+  border-radius:var(--radius);
+  box-shadow: 0 6px 18px rgba(15,23,36,0.08);
+}
+
+
+h1{
+  margin:0 0 10px 0;
+  font-size:1.8rem;
+  letter-spacing:0.4px;
+  color:var(--accent);
+}
+h2{
+  margin-top:20px;
+  margin-bottom:8px;
+  font-size:1.05rem;
+  color:#0b1220;
+}
+
+
+ul{
+  padding-left:0;
+  margin:0 0 16px 0;
+  display:grid;
+  gap:8px;
+  list-style:none;
+}
+li{
+  padding:10px 12px;
+  background:#f3f6fb;
+  border-radius:10px;
+  color:var(--muted);
+  font-weight:600;
+  display:inline-block;
+}
+
+
+p{
+  margin:0 0 12px 0;
+  color:#22303f;
+}
+
+
+img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  border-radius:10px;
+  margin-top:12px;
+  box-shadow: 0 6px 14px rgba(11,20,34,0.06);
+  object-fit:cover;
+}
+
+
+a, button{
+  transition:all .18s ease;
+}
+li:hover{ transform: translateY(-3px); box-shadow: 0 8px 18px rgba(43,108,176,0.06); }
+
+
+@media (max-width:520px){
+  body{ padding:18px 10px; }
+  h1{ font-size:1.4rem; }
+}
+/* Botón simple */
+.btn {
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  padding:10px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  margin-bottom:12px;
+}
+.btn:hover {
+  background:#1e4e85;
+  transform:translateY(-2px);
+}
+
+/* Galería de imágenes */
+.galeria {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap:14px;
+  margin-top:10px;
+}
+.galeria img {
+  border-radius:12px;
+  object-fit:cover;
+  width:100%;
+  aspect-ratio:1/1;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+}
