@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Juan Pablo Becerra López</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="personaje.html" class="nav-link">Personaje Favorito</a>
+      <a href="contacto.html" class="nav-link active">Contacto</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header>
+      <h1>Contacto</h1>
+      <p>Quiero saber que opinas,contactame...</p>
+    </header>
+
+    <div class="contacto-grid">
+      <section class="formulario-seccion">
+        <h2>Envíame un mensaje</h2>
+        <form class="formulario-contacto">
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="campo">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto" required>
+              <option value="">Selecciona un tema</option>
+              <option value="senderismo">Senderismo</option>
+              <option value="futbol">Fútbol</option>
+              <option value="naturaleza">Exploración de la naturaleza</option>
+              <option value="otro">Otro tema</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre ti o pregúntame algo..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-enviar">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <section class="info-contacto">
+        <h2>Información de contacto</h2>
+        
+        <div class="tarjeta-info">
+          <h3>📧 Correo electrónico</h3>
+          <p>juan.pablo.@email.com</p>
+        </div>
+
+        <div class="tarjeta-info">
+          <h3>📱 Teléfono</h3>
+          <p>+52 33 1234 5678</p>
+        </div>
+
+        <div class="tarjeta-info">
+          <h3>📍 Ubicación</h3>
+          <p>México</p>
+        </div>
+      </section>
+    </div>
+  </main>
